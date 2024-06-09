@@ -2,7 +2,7 @@ addEventListener("fetch", (event) => {
   event.passThroughOnException();
   event.respondWith(handleRequest(event.request));
 });
-//
+
 const routes = {
   "docker.libcuda.so": "https://registry-1.docker.io",
   "quay.libcuda.so": "https://quay.io",
